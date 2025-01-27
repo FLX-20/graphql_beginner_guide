@@ -322,7 +322,7 @@ This implementation requires the additional library called Graphene,
 which provides a simple, powerful, and flexible way to define gql schemas and resolve queries.
 Before we can start implementing the gql API, we need to install the required packages:
 ```
-pip install Flask graphene "gql-server[flask]"
+pip install Flask graphene "graphql-server[flask]"
 ```
 In the first part of the code, we will import the Graphene module, 
 which is used for building and managing gql schemas in Python. Additionally, 
@@ -332,7 +332,7 @@ which will provide an endpoint (URL) where you can send gql queries.
 ```python
 import graphene
 from flask import Flask
-from gql_server.flask import gqlView
+from graphql_server.flask import GraphQLView
 ```
 Afterwards, the simulated database, consisting of authors and books, is set up again.
 ```python
@@ -458,9 +458,9 @@ The method `app.add_url_rule()` adds a URL route to the Flask application for ha
 app = Flask(__name__)
 
 app.add_url_rule(
-    "/gql",
-    view_func=gqlView.as_view(
-        "gql",
+    "/graphql",
+    view_func=GraphQLView.as_view(
+        "graphql",
         schema=schema,
         graphiql=True
     ),
