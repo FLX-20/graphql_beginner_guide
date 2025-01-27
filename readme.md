@@ -144,6 +144,7 @@ Both web applications are developed with Flask, a lightweight and minimalistic P
 In these examples, I will specifically utilize Flask's routing feature, which offers a straightforward way to define routes. 
 These routes determine how URLs map to Python functions.
 
+### REST-Application Implementation
 Let's begin with the traditional approach: implementing a REST API for fetching and updating authors and their books.
 
 First, create a new Python virtual environment and install the required packages.
@@ -302,20 +303,12 @@ To run the Python application, use the following command, where `rest_app.py` is
 ```python
 python3 rest_app.py
 ```
-Next, open Postman and execute an GET and POST request to test your API.
+Next, open Postman and execute the example GET request to test your API.
+```
+GET /authors
 ```
 
-
-
-
-
-
-
-
-
-
-
-```
+### GraphQL Application Implementation
 In the next section, we will implement the same application using GraphQL instead of REST. 
 This implementation requires the additional library called Graphene, 
 which provides a simple, powerful, and flexible way to define GraphQL schemas and resolve queries.
