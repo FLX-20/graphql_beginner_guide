@@ -1,0 +1,17 @@
+blinker==1.9.0
+click==8.1.8
+Flask==3.1.0
+Flask-GraphQL==2.0.1
+graphene==3.4.3
+graphql-core==2.3.2
+graphql-relay==3.2.0
+graphql-server-core==1.2.0
+itsdangerous==2.2.0
+Jinja2==3.1.5
+MarkupSafe==3.0.2
+promise==2.3
+python-dateutil==2.9.0.post0
+Rx==1.6.3
+six==1.17.0
+typing_extensions==4.12.2
+Werkzeug==3.1.3
